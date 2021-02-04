@@ -6,10 +6,12 @@ namespace Vendas_notebook.Models
     {
         public Guid Id { get; set; }
         public String Conta { get; set; }
+        
+        public DateTime DataCriacao { get; set; }
 
         public ContaBancaria()
         {
-            
+            this.DataCriacao = new DateTime();
         }
     }
 }

@@ -11,8 +11,15 @@ namespace Vendas_notebook.Models
         public Fornecedor? Fornecedor { get; set; }
         public Cliente? Cliente { get; set; }
         public Notebook Notebook { get; set; }
+        public ContaBancaria ContaRecebimento { get; set; }
 
         public DateTime DataVenda { get; set; }
+        public DateTime DataCriacao { get; set; }
+
+        public Venda()
+        {
+            this.DataCriacao = new DateTime();
+        }
 
     }
 }

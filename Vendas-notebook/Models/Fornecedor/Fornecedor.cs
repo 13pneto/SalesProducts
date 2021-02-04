@@ -14,9 +14,11 @@ namespace Vendas_notebook.Models
         
         public String Observacao { get; set; }
         
+        public DateTime DataCriacao { get; set; }
+        
         public Fornecedor()
         {
-            
+            this.DataCriacao = new DateTime();
         }
         
     }

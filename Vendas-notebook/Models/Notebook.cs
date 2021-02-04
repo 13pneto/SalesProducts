@@ -13,16 +13,19 @@ namespace Vendas_notebook.Models
         public Marca Marca { get; set; }
         public Modelo Modelo { get; set; }
 
-        public Boolean PrecisaArrumar { get; set; }
-        public Boolean Vendido { get; set; }
+        public Boolean? PrecisaArrumar { get; set; }
+        public Boolean? Vendido { get; set; }
         public DateTime DataCompra { get; set; }
-        public DateTime DataVenda { get; set; }  //TODO Setar quando for vendido
+        public DateTime? DataVenda { get; set; }  //TODO Setar quando for vendido
         
-        public List<Despesa> Despesas { get; set; }
+        public List<Despesa>? Despesas { get; set; }
+        
+        public DateTime DataCriacao { get; set; }
 
         public Notebook()
         {
             this.DataCompra = new DateTime();
+            this.DataCriacao = new DateTime();
         }
     }
 }
