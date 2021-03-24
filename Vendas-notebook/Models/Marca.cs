@@ -3,17 +3,11 @@ using Vendas_notebook.Models;
 
 namespace GestaoVendas.Notebook.Models
 {
-    public class Marca
+    public class Marca : BaseClass
     {
-        public Guid Id { get; set; }
         public String MarcaNome { get; set; }
         public LinhaDeProdutos LinhaProdutos { get; set; }
 
         public DateTime DataCriacao { get; set; }
-
-        public Marca()
-        {
-            this.DataCriacao = new DateTime();
-        }
     }
 }

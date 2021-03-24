@@ -2,9 +2,8 @@ using System;
 
 namespace Vendas_notebook.Models
 {
-    public class Fornecedor
+    public class Fornecedor : BaseClass
     {
-        public Guid Id { get; set; }
         public String RazaoSocial { get; set; } //RazaoSocial ou Nome
         public String Telefone { get; set; }
         
@@ -13,14 +12,7 @@ namespace Vendas_notebook.Models
         public String? EnderecoRetirada { get; set; } //Apenas se TipoRetirada = 0 ou 1
         
         public String Observacao { get; set; }
-        
-        public DateTime DataCriacao { get; set; }
-        
-        public Fornecedor()
-        {
-            this.DataCriacao = new DateTime();
-        }
-        
+            
     }
     
     public enum TipoFornecedor

@@ -2,17 +2,8 @@ using System;
 
 namespace Vendas_notebook.Models
 {
-    public class TipoDespesa
+    public class TipoDespesa: BaseClass
     {
-        public Guid Id { get; set; }
         public String DescricaoDespesa { get; set; }
-        
-        
-        public DateTime DataCriacao { get; set; }
-
-        public TipoDespesa()
-        {
-            DataCriacao = new DateTime();
-        }
     }
 }

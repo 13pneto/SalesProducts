@@ -1,11 +1,9 @@
 using System;
-using System.Collections.Generic;
 
 namespace Vendas_notebook.Models
 {
-    public class LinhaDeProdutos
+    public class LinhaDeProdutos : BaseClass
     {
-        public Guid Id { get; set; }
         public String LinhaDoProduto { get; set; }
     }
 }

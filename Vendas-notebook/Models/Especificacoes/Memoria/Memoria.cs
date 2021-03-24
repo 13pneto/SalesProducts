@@ -2,9 +2,8 @@ using System;
 
 namespace Vendas_notebook.Models
 {
-    public class Memoria
+    public class Memoria : BaseClass
     {
-        public Guid Id { get; set; }
         public String Descricao { get; set; }
         public DDR GeracaoDDR { get; set; }
     }

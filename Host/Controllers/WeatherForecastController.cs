@@ -4,9 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Vendas_notebook.Models;
 
-namespace Vendas_notebook.Controllers
+namespace Host.Controllers
 {
     [ApiController]
     [Route("[controller]")]

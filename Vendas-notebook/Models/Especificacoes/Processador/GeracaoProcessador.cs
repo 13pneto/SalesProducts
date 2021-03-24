@@ -2,9 +2,8 @@ using System;
 
 namespace Vendas_notebook.Models
 {
-    public class GeracaoProcessador
+    public class GeracaoProcessador : BaseClass
     {
-        public Guid Id { get; set; }
         public String Geracao { get; set; }
     }
 }

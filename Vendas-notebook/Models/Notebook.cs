@@ -1,13 +1,11 @@
+using GestaoVendas.Notebook.Models;
 using System;
 using System.Collections.Generic;
-using System.Security.Principal;
-using GestaoVendas.Notebook.Models;
 
 namespace Vendas_notebook.Models
 {
-    public class Notebook
+    public class Notebook : BaseClass
     {
-        public Guid Id { get; set; }
         public int Sequencia { get; set; }
         
         public Marca Marca { get; set; }
@@ -19,13 +17,5 @@ namespace Vendas_notebook.Models
         public DateTime? DataVenda { get; set; }  //TODO Setar quando for vendido
         
         public List<Despesa>? Despesas { get; set; }
-        
-        public DateTime DataCriacao { get; set; }
-
-        public Notebook()
-        {
-            this.DataCompra = new DateTime();
-            this.DataCriacao = new DateTime();
-        }
     }
 }

@@ -2,9 +2,8 @@ using System;
 
 namespace Vendas_notebook.Models
 {
-    public class Produto
+    public class Produto : BaseClass
     {
-        public Guid Id { get; set; }
         public string Descricao { get; set; }
         public int Quantidade { get; set; }
         public float Total { get; set; }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Vendas_notebook
+namespace Host
 {
     public class WeatherForecast
     {
